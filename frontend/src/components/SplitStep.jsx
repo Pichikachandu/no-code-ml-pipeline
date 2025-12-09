@@ -31,7 +31,7 @@ const SplitStep = ({ runId, pipelineData, onNext, onPrev }) => {
         <div className="flex w-full flex-col rounded-xl border border-[#dce0e5] dark:border-gray-700 bg-white dark:bg-gray-800/50 shadow-sm max-w-3xl mx-auto">
             <div className="p-6 sm:p-8">
                 {/* Header */}
-                <div className="flex items-center gap-2 mb-1">
+                <div className="flex flex-wrap items-center gap-2 mb-1">
                     <h1 className="text-[#111418] dark:text-white tracking-tight text-2xl sm:text-3xl font-bold leading-tight">Split Your Data</h1>
                     <div className="group relative">
                         <span className="material-symbols-outlined text-slate-400 dark:text-gray-500 cursor-pointer text-xl">info</span>

@@ -152,17 +152,17 @@ const PreprocessStep = ({ runId, pipelineData, onNext, onPrev }) => {
             </div>
 
             {/* Navigation Buttons */}
-            <footer className="mt-12 flex justify-end gap-4 border-t border-[#dce0e5] dark:border-white/10 py-5">
+            <footer className="mt-12 flex flex-col-reverse sm:flex-row justify-end gap-4 border-t border-[#dce0e5] dark:border-white/10 py-5">
                 <button
                     onClick={onPrev}
-                    className="flex min-w-[84px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-transparent border border-[#dce0e5] dark:border-white/30 text-[#111418] dark:text-white text-sm font-bold leading-normal tracking-wide hover:bg-gray-100 dark:hover:bg-white/10 transition-colors"
+                    className="flex w-full sm:w-auto min-w-[84px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-transparent border border-[#dce0e5] dark:border-white/30 text-[#111418] dark:text-white text-sm font-bold leading-normal tracking-wide hover:bg-gray-100 dark:hover:bg-white/10 transition-colors"
                 >
                     <span className="truncate">Back</span>
                 </button>
                 <button
                     onClick={handleProcess}
                     disabled={loading}
-                    className="flex min-w-[84px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-primary text-white text-sm font-bold leading-normal tracking-wide hover:bg-primary/90 transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
+                    className="flex w-full sm:w-auto min-w-[84px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-primary text-white text-sm font-bold leading-normal tracking-wide hover:bg-primary/90 transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
                 >
                     <span className="truncate">{loading ? 'Processing...' : 'Next'}</span>
                 </button>

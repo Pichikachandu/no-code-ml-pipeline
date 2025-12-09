@@ -55,7 +55,7 @@ const UploadStep = ({ onNext, setRunId, setPipelineData }) => {
                         <p className="text-[#111418] dark:text-white text-lg font-bold leading-tight tracking-[-0.015em] max-w-[480px] text-center">Drag & drop your file here or browse files</p>
                         <p className="text-slate-500 dark:text-slate-400 text-sm font-normal leading-normal max-w-[480px] text-center">Supported file types: CSV, XLS. Maximum file size: 100MB.</p>
                     </div>
-                    <label className="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-[#f0f2f4] dark:bg-white/10 text-[#111418] dark:text-white text-sm font-bold leading-normal tracking-[0.015em] hover:bg-[#e1e4e8] dark:hover:bg-white/20 transition-colors">
+                    <label className="flex w-full sm:w-auto min-w-[84px] max-w-none sm:max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-[#f0f2f4] dark:bg-white/10 text-[#111418] dark:text-white text-sm font-bold leading-normal tracking-[0.015em] hover:bg-[#e1e4e8] dark:hover:bg-white/20 transition-colors">
                         <span className="truncate">Select from computer</span>
                         <input type="file" className="hidden" onChange={handleFileChange} accept=".csv, .xls, .xlsx" />
                     </label>
@@ -78,7 +78,7 @@ const UploadStep = ({ onNext, setRunId, setPipelineData }) => {
                     <button
                         onClick={handleUpload}
                         disabled={loading || !file}
-                        className="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-12 px-5 bg-primary text-white text-base font-bold leading-normal tracking-[0.015em] disabled:opacity-50 disabled:cursor-not-allowed hover:bg-blue-600 transition-colors"
+                        className="flex w-full sm:w-auto min-w-[84px] max-w-none sm:max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-12 px-5 bg-primary text-white text-base font-bold leading-normal tracking-[0.015em] disabled:opacity-50 disabled:cursor-not-allowed hover:bg-blue-600 transition-colors"
                     >
                         <span className="truncate">{loading ? 'Uploading...' : 'Next'}</span>
                     </button>

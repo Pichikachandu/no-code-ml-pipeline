@@ -119,16 +119,16 @@ const PreviewStep = ({ runId, pipelineData, onNext, onPrev }) => {
             </div>
 
             {/* Wizard Navigation Bar */}
-            <div className="flex flex-wrap justify-between gap-4 p-4 mt-8 border-t border-[#dce0e5] dark:border-gray-700">
+            <div className="flex flex-col-reverse sm:flex-row flex-wrap justify-between gap-4 p-4 mt-8 border-t border-[#dce0e5] dark:border-gray-700">
                 <button
                     onClick={onPrev}
-                    className="rounded-lg px-6 py-3 text-base font-medium text-[#111418] dark:text-gray-300 bg-[#f0f2f4] dark:bg-gray-700 hover:bg-[#e1e4e8] dark:hover:bg-gray-600 transition-colors"
+                    className="w-full sm:w-auto rounded-lg px-6 py-3 text-base font-medium text-[#111418] dark:text-gray-300 bg-[#f0f2f4] dark:bg-gray-700 hover:bg-[#e1e4e8] dark:hover:bg-gray-600 transition-colors"
                 >
                     Back
                 </button>
                 <button
                     onClick={onNext}
-                    className="rounded-lg bg-primary px-6 py-3 text-base font-medium text-white hover:bg-primary/90 transition-colors shadow-md"
+                    className="w-full sm:w-auto rounded-lg bg-primary px-6 py-3 text-base font-medium text-white hover:bg-primary/90 transition-colors shadow-md"
                 >
                     Next
                 </button>
